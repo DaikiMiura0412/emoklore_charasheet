@@ -5,5 +5,4 @@ Django==3.2.5
 pytz==2021.1
 sqlparse==0.4.1
 static3==0.7.0
-PostgreSQL==9.4.3
-psycopg2==2.6.1
+psycopg2-binary==2.8.6
