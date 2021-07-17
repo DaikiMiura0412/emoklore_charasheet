@@ -144,3 +144,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'emoklore_charasheet_app.apps.EmokloreCharasheetAppConfig', # AppConfigを追加
 ]
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
